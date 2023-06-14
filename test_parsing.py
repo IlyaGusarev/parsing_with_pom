@@ -4,9 +4,11 @@ import pytest
 import os
 from pages.search_page import SearchPage
 from pages.result_page import ResultPage
-from open_and_safe_xlsx import OpenAndSafeXlsx
+from conftest import OpenAndSafeXlsx
 
 
+# В папке data лежат xlsx-файлы, в кажом файле список номеров, которые
+# нужно проверить
 files = list(os.walk('data'))[0][2]
 
 
